@@ -1,0 +1,23 @@
+﻿+-----------------+       +------------------+       +------------------+
+|     Episode     |       |  SubjectMatter   |       |   ColorUsage     |
++-----------------+       +------------------+       +------------------+
+| EPISODE (PK)    | 1     | SUBJECT_MATTER_ID (PK) |    | USAGE_ID (PK)    |
+| TITLE           |-----> | Apple_Frame       |       | PAINTING_INDEX   |
+| AIR_DATE        |       | Aurora_Borealis   |       | COLOR_ID         |
+| img_src         |       | Barn              |       | Black_Gesso      |
+| num_colors      |       | ... (other subject matters) | Bright_Red    |
+| youtube_src     |       +------------------+       | Burnt_Umber   |
+|                 |                                  | ... (other color attributes)|
++-----------------+                                  +------------------+
+        |                                                        |
+        |                                                        |
+        V                                                        V
++-----------------+                                  +------------------+
+|     Color       |                                  |   SubjectMatter   |
++-----------------+                                  +------------------+
+| COLOR_ID (PK)   |                                  | SUBJECT_MATTER_ID (PK) |
+| COLOR_NAME      |                                  | Apple_Frame       |
+| COLOR_HEX       |                                  | Aurora_Borealis   |
+|                 |                                  | Barn              |
+|                 |                                  | ... (other subject matters) |
++-----------------+                                  +------------------+
